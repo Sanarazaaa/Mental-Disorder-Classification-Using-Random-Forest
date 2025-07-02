@@ -6,7 +6,7 @@ The dataset I worked with included responses related to conditions like ADHD, PT
 
 ### Dataset
 
-I used a dataset called `Mental disorder symptoms.xlsx` (private/unpublished). Before feeding it into the model, I spent time cleaning and preparing it. This included:
+I used a dataset called `Mental disorder symptoms.xlsx`. Before feeding it into the model, I spent time cleaning and preparing it. This included:
 - Removing missing values to ensure consistency
 - Dropping duplicates to avoid data bias
 - Separating the features from the target labels (the disorder type)
@@ -28,7 +28,7 @@ Most disorders were predicted correctly across the board. Out of 12 total disord
 
 ### What I Discovered
 
-While the results were encouraging, the model wasn’t perfect. I noticed that it often confused two specific disorders: Major Depressive Disorder (MDD) and Persistent Depressive Disorder (PDD). Each was misclassified as the other once.
+I noticed that it often confused two specific disorders: Major Depressive Disorder (MDD) and Persistent Depressive Disorder (PDD). Each was misclassified as the other once.
 
 This made sense when I looked closer — the sample size for both was extremely small (only two samples each), and their symptom patterns overlapped a lot. That explained why the model had a harder time telling them apart.
 
