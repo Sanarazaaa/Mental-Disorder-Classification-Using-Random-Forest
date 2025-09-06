@@ -34,15 +34,39 @@ This made sense when I looked closer — the sample size for both was extremely 
 
 ---
 
-### Visual Insights
+### Improved Model: XGBoost with SMOTE + Hyperparameter Tuning
 
-To better understand the model’s behavior, I visualized:
-- Feature importance — to see which symptoms were most influential in making predictions
-- A confusion matrix — to pinpoint exactly where misclassifications occurred (confirming that errors only happened between MDD and PDD)
+To overcome class imbalance, I applied **SMOTE** and then trained an **XGBoost classifier** with hyperparameter tuning.  
+
+### Performance
+- **Test Accuracy:** 95%  
+- **Cross-Validation Accuracy (5-fold):** 96%  
+This significantly reduced misclassifications between **Major Depressive Disorder (MDD)** and **Persistent Depressive Disorder (PDD).
+  
+---
+
+
+### Key Insights
+
+**Important Predictors (from Feature Importance + SHAP):**
+- Hallucinations  
+- Change in eating patterns  
+- Hopelessness  
+- Nightmares  
+- Sweating  
+- Close friend (support factor)  
+- Increased energy  
+- Introversion  
+- Avoidance of activities  
+- Concentration difficulties  
+
+These features consistently emerged as the most influential in determining mental health disorder classification.  
+
+---
 
 
 ### Reflections
 
 Working on this project was not just technically rewarding, but also meaningful. Mental health is deeply personal and complex. While this model isn’t a diagnostic tool, I believe projects like this can help us understand patterns better, support early detection efforts, and inspire more conversation around mental health in tech and data science spaces.
 
-If you're curious, feel free to go through the notebook and reach out — I’d love to hear your thoughts.
+
