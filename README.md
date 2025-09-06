@@ -1,4 +1,4 @@
-## Mental Disorder Classification Using Random Forest
+## Mental Disorder Classification
 
 The dataset I worked with included responses related to conditions like ADHD, PTSD, OCD, anxiety, depression, and others. My goal was to train a model that could recognize the underlying patterns in the data and accurately classify each disorder.
 
